@@ -24,7 +24,14 @@ const Body =()=>{
         <div className="intro-main">
         <div className='even-columns'>
         <div className='main-container'>
-        <h1>Full Stack Skill Set</h1>
+        <div className='skillset-container'>
+        <div className='skillset-title'>
+        <div className='skillset-span'>
+        <h1 className='skillset-first'>FullStack </h1>
+        <h1 className='skillset-second'>SkillSet </h1>
+        </div>
+        </div>
+        </div>
         <div className='icon-row'>
             <img src={expressLogo} alt="express logo"  />
             <img src={nodeLogo}s alt="node logo"/>
