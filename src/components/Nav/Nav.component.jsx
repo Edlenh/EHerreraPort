@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import {Outlet, Link} from 'react-router-dom'
+import {Outlet, Link, NavLink} from 'react-router-dom'
 import './Nav.style.css'
 
 const Nav =()=>{
@@ -10,15 +10,36 @@ const Nav =()=>{
                <h1 className='logo'>eH</h1> 
             </Link>
             <div className='nav-links-container'>
-            <Link className='nav-link' to='/'>
-                    About
-                </Link>
-                <Link className='nav-link' to='/projects'>
-                    Projects
-                </Link>
-                <Link className='nav-link' to='/contact'>
-                    Contact
-                </Link>
+            <NavLink to="/"
+                style={
+                    ({ isActive}) => {
+                        return {
+                 fontWeight: isActive ? "bold" : "",
+                 color: isActive ? "black" : "white",
+                };}}
+                className="nav-link"> 
+                About
+                </NavLink>
+                
+                <NavLink to="/projects"
+                style={({ isActive }) => {
+                        return {
+                 fontWeight: isActive ? "bold" : "",
+                 color: isActive ? "black" : "white",
+
+                };}}
+                className="nav-link"> 
+                Projects
+                </NavLink>
+                <NavLink to="/contact"
+                style={({ isActive}) => {
+                        return {
+                 fontWeight: isActive ? "bold" : "",
+                 color: isActive ? "black" : "white",
+                };}}
+                className="nav-link"> 
+                Contact
+                </NavLink>
             </div>
             </div>
             <Outlet />

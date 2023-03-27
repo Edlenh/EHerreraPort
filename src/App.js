@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer.component'
 import Hacker from './components/assets/svg/hackerman.svg'
 import './index.css';
 
+
 const App=()=> {
   return ((
     <div className="App" style={{ backgroundImage: `url(${Hacker})`, backgroundRepeat: 'no-repeat' }}>
