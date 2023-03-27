@@ -1,0 +1,15 @@
+.intro-main {
+    margin-top: -100px;
+    max-width: 1110px;
+    margin-inline: auto;
+  }
+  .main-container {
+    display: grid;
+    place-items: center;
+    margin-bottom: -200px;
+  }
+
+.even-columns{
+    display: grid;
+    gap:1rem;
+  }
