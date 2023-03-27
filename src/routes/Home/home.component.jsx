@@ -7,7 +7,7 @@ const Home=()=>{
         <div className="main">
         <Outlet/>
         <div className="main-container">
-        <h1 className="main-header">Hello! I'm Edward Herrera 
+        <h1 className="main-header">Hello! I'm Edward Herrera  
         <div className="roller">
           <span className="rolltext">
             JUNIOR WEB DEVELOPER<br/>

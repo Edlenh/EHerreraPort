@@ -1,4 +1,4 @@
-// import Me from '../assets/images/Me4.jpg'
+import {Link} from 'react-router-dom'
 import expressLogo from '../assets/svg/expresslogo.svg'
 import nodeLogo from '../assets/svg/nodelogo.svg'
 import jsLogo from '../assets/svg/jslogo.svg'
@@ -24,7 +24,7 @@ const Body =()=>{
         <div className="intro-main">
         <div className='even-columns'>
         <div className='main-container'>
-        <h1>Full Stack Web Developer</h1>
+        <h1>Full Stack Skill Set</h1>
         <div className='icon-row'>
             <img src={expressLogo} alt="express logo"  />
             <img src={nodeLogo}s alt="node logo"/>
@@ -44,9 +44,17 @@ const Body =()=>{
             <img src={jwtLogo} alt="json web token logo" />
             <img src={figmaLogo} alt="figma logo" />
             <img src={herokuLogo} alt="heroku logo" />
-
-
         </div>
+        <h1><Link className='nav-link' to='/projects'>
+        <span className='link-main' style={{color: "#D2B7E5" ,marginLeft: 20}}>PORTFOLIO </span>
+        </Link> 
+        <Link className='nav-link' to='/contact'>
+        <span className='link-main' style={{color: "#FFF" ,marginLeft : 20}}>CONTACT </span>
+        </Link>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQK2oPFEIBSEovpYb4i5lpxfws3UZ-b9FsR4WBPKV4kbYbjnjoYQMAFEurm_bMQs3ZAWPTpoIZLYzeB/pub" 
+        target="_blank" rel="noopener noreferrer"> 
+        <span className='link-main'style={{color: "#D2B7E5" ,marginLeft : 30}}>RESUME</span></a>
+         </h1>
         </div>
         </div>
         </div>
