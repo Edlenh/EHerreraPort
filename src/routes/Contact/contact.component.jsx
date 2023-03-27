@@ -1,44 +1,47 @@
-import React from 'react'
-const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
-  const onSubmit = (e) => {
-    e.preventDefault()
-    setFormStatus('Submitting...')
-    const { name, email, message } = e.target.elements
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    }
-    console.log(conFom)
-  }
+import React, { useState } from "react";
+
+function ContactForm() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Email:", email);
+    console.log("Message:", message);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">Contact Me!</h2>
-      <form onSubmit={onSubmit}>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="name">
-            Name
-          </label>
-          <input className="form-control" type="text" id="name" required />
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="email">
-            Email
-          </label>
-          <input className="form-control" type="email" id="email" required />
-        </div>
-        <div className="mb-3">
-          <label className="form-label" htmlFor="message">
-            Message
-          </label>
-          <textarea className="form-control" id="message" required />
-        </div>
-        <button className="btn btn-danger" type="submit">
-          {formStatus}
-        </button>
-      </form>
-    </div>
-  )
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={email}
+        onChange={handleEmailChange}
+        required
+      />
+      <br />
+      <label htmlFor="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        value={message}
+        onChange={handleMessageChange}
+        required
+      />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  );
 }
-export default ContactForm
+
+export default ContactForm;
