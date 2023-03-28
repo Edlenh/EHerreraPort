@@ -1,55 +1,41 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Resume from '../../components/assets/images/resume.png'
-import mailIcon from '../../components/assets/svg/sendmail.svg'
+import './contact.style.css'
 
-function ContactForm() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const Contact = () => {
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // do something with the email and message
-  }
+
+    emailjs.sendForm('service_09y02hq', 'template_qil4w51', form.current, 'kj44oMwiQWBluQp7m')
+      .then((result) => {
+         alert("Email Sent!");
+         e.target.reset()
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   return (
-    <div className='formMain'>
-    <h1>LET'S CONNECT</h1>
-    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <label style={{ marginBottom: '10px' }}>
-        <input 
-          type="email" 
-          placeholder='Email'
-          value={email} 
-          onChange={(e) => setEmail(e.target.value)} 
-          required 
-          style={{ marginLeft: '20px' }}
-        />
-      </label>
-      <label style={{ marginBottom: '10px' }}>
-        <textarea 
-          value={message} 
-          placeholder='Send Me A Message!'
-          onChange={(e) => setMessage(e.target.value)} 
-          required 
-          style={{ marginLeft: '20px' }}
-        />
-      </label>
-      <button type="submit" style={{ marginTop: '10px' }}>Submit </button> 
+    <div className='contact-form-main'>
+    <form ref={form}  className='form' onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
     </form>
-    <h1>HERE IS MY <span className='contact-photo-container'>
-      <span className='contact-photo' style={{ 
-      backgroundImage: `url(${mailIcon})` 
-    }}> 
-      RESUME
-      </span>
-      </span></h1>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vQK2oPFEIBSEovpYb4i5lpxfws3UZ-b9FsR4WBPKV4kbYbjnjoYQMAFEurm_bMQs3ZAWPTpoIZLYzeB/pub" 
-        target="_blank" rel="noopener noreferrer"> 
-        <span className='link-main'style={{color: "#D2B7E5" ,marginLeft : 30}}>
-        <img src={Resume} alt="Resume Logo"/>
-            </span></a>
-    </div>
+     <h1>HERE IS MY RESUME <a href="https://docs.google.com/document/d/e/2PACX-1vQK2oPFEIBSEovpYb4i5lpxfws3UZ-b9FsR4WBPKV4kbYbjnjoYQMAFEurm_bMQs3ZAWPTpoIZLYzeB/pub" 
+         target="_blank" rel="noopener noreferrer"> 
+         <span className='link-main'style={{color: "#D2B7E5" ,marginLeft : 30}}>
+         <img src={Resume} alt="Resume Logo"/>
+             </span></a></h1>
+     </div>
   );
-}
-
-export default ContactForm;
+};
+  
+export default Contact
