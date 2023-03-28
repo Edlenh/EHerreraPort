@@ -34,7 +34,7 @@ const Body =()=>{
         </div>
         <div className='icon-row'>
             <img src={expressLogo} alt="express logo"  />
-            <img src={nodeLogo}s alt="node logo"/>
+            <img src={nodeLogo} alt="node logo"/>
             <img src={jsLogo} alt="javascript logo" />
             <img src={htmlLogo} alt="html logo" />
             <img src={cssLogo} alt="css logo"  />
@@ -50,7 +50,7 @@ const Body =()=>{
             <img src={firebaseLogo} alt="firebase logo" />
             <img src={jwtLogo} alt="json web token logo" />
             <img src={figmaLogo} alt="figma logo" />
-            <img src={herokuLogo} alt="heroku logo" />
+            <img src={herokuLogo} alt="heroku logo" /> 
         </div>
         <h1><Link className='nav-link' to='/projects'>
         <span className='link-main' style={{color: "#D2B7E5" ,marginLeft: 20}}>PORTFOLIO </span>
