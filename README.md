@@ -1,7 +1,13 @@
-# Getting Started with Create React App
-Complete Overhaul of my personal portfolio using React.
+# Complete refactor of my personal portfolio using React.
+
 <img width="1280" alt="Screenshot 2023-03-29 110316" src="https://user-images.githubusercontent.com/84059980/228628226-9998d753-0c8c-4063-879f-b46fa7030f2f.png">
 <img width="1266" alt="Screenshot 2023-03-29 110259" src="https://user-images.githubusercontent.com/84059980/228628223-72e2658e-8dd8-43bc-8dd5-f144143dc72f.png">
+
+## Work In Progress- Projects Page with clickable links
+<img width="924" alt="Screenshot 2023-03-29 160701" src="https://user-images.githubusercontent.com/84059980/228687632-3e4f688f-ff31-404d-8354-d82268f885f9.png">
+
+## Send Emails using my Contact Form alongside a link to my Resume
+<img width="716" alt="Screenshot 2023-03-29 160645" src="https://user-images.githubusercontent.com/84059980/228687669-9b2ec3ea-0e38-4194-b4b4-730cbf4791e9.png">
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
