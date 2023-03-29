@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 Complete Overhaul of my personal portfolio using React.
+<img width="1266" alt="Screenshot 2023-03-29 110259" src="https://user-images.githubusercontent.com/84059980/228628223-72e2658e-8dd8-43bc-8dd5-f144143dc72f.png">
+<img width="1280" alt="Screenshot 2023-03-29 110316" src="https://user-images.githubusercontent.com/84059980/228628226-9998d753-0c8c-4063-879f-b46fa7030f2f.png">
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -13,11 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -39,15 +37,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
 ### Analyzing the Bundle Size
 
