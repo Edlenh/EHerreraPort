@@ -1,33 +1,34 @@
+
 const projects =[
     {
         "id": 1,
         "title": "Ez Eats",
-        // "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
+        "link": "https://github.com/Edlenh/EasyEat"
       },
       {
         "id": 2,
         "title": "Life Coach",
-        // "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png"
+        "link": "https://github.com/Edlenh/LynDznProgressCoach"
       },
       {
         "id": 3,
         "title": "BrightOutLook",
-        // "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
+        "link": " https://mindful-outlook.netlify.app/"
       },
       {
         "id": 4,
         "title": "To-Do-App",
-        // "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png"
+        "link":"https://github.com/Edlenh/BestToDoAppEver"
       },
       {
         "id": 5,
         "title": "ActivityTracker",
-        // "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
+        "link": "http://braggingrights.herokuapp.com/"
       },
       {
         "id": 6,
-        "title": "Project6",
-        // "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
+        "title": "Quiz App",
+        "link": "https://github.com/Edlenh/EdsImpossibleQuiz"
       },
 ]
 

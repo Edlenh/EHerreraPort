@@ -1,22 +1,27 @@
-import { Outlet } from "react-router-dom";
 import projects from '../../routes/Projects/projects.js'
 import './projects.style.css'
 
+
 const Projects=()=>{
     return(
-        <div>
-        <Outlet/>
-        <h1 className="header">PROJECTS</h1>
+        <div className='main-container'>
+        <span className='project-span'>
+        <h1 className="project-header">PROJECTS</h1></span>
+        <div className='gallery'>
+        <div className="project-container">
+        <div className="project-container-items">
         {projects.map((project)=>{
-                 const { id, title } = project;
-                 return(
-                <div key={id}>
-                    <h1>{title}</h1>
-                    {/* <img src={imageUrl} alt={title}/> */}
-                    </div>
-                 )
-                 })}
+        const { id, title ,link } = project;
+        return(
+            <div key={id}>
+                    <a href={link}  target="_blank" rel="noopener noreferrer"><h2 className='project-item'>{title}</h2></a>
+            </div>
+            )
+        })}
         </div>
+    </div>
+</div>
+</div>
     )
 }
 

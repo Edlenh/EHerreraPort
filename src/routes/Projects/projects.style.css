@@ -1,3 +1,48 @@
-.header{
-    color: #fff
+.project-span{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0, -10deg);
+    }
+
+.project-header{
+    margin-top: -30px;
+    font-family: "Exo 2", sans-serif;
+    padding-right: 3.25rem;
+    order: 2;
+    color: #fde9ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 6rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px #fde9ff, 2px 2px 1px #532B88, 4px 2px 1px #fde9ff,
+    3px 3px 1px #532B88, 5px 3px 1px #fde9ff, 4px 4px 1px #532B88,
+    6px 4px 1px #fde9ff, 5px 5px 1px #532B88, 7px 5px 1px #fde9ff,
+    6px 6px 1px #532B88, 8px 6px 1px #fde9ff, 7px 7px 1px #532B88,
+    9px 7px 1px #fde9ff;
+    }
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+      
+    
+  
+.project-item{
+    color: #fff;
+}
+
+.project-container{
+    min-width: 30%;
+    height: 240px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7.5px 15px;
+   
 }
