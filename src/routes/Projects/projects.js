@@ -2,8 +2,8 @@
 const projects =[
     {
         "id": 1,
-        "title": "Ez Eats",
-        "link": "https://github.com/Edlenh/EasyEat"
+        "title": "Squad Goals",
+        "link": "https://squadgoals.herokuapp.com"
       },
       {
         "id": 2,
@@ -17,16 +17,6 @@ const projects =[
       },
       {
         "id": 4,
-        "title": "To-Do-App",
-        "link":"https://github.com/Edlenh/BestToDoAppEver"
-      },
-      {
-        "id": 5,
-        "title": "ActivityTracker",
-        "link": "http://braggingrights.herokuapp.com/"
-      },
-      {
-        "id": 6,
         "title": "Quiz App",
         "link": "https://github.com/Edlenh/EdsImpossibleQuiz"
       },

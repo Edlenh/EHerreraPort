@@ -36,7 +36,7 @@ export default function Footer() {
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh',
-        marginTop: '-500px'
+        marginTop: '-575px'
       }}
     >
       <CssBaseline />

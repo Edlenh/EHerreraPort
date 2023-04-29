@@ -36,7 +36,9 @@ const Contact = () => {
          <img src={Resume} alt="Resume Logo"/>
              </span></a></h1>
      </div>
+     <div className='ps-wrapper'>
      <h3 className='ps'> I Look Forward To Hearing From You! </h3>
+     </div>
      </div>
      
   );
