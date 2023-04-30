@@ -31,7 +31,7 @@
 }
       
     
-  
+
 .project-item{
     color: #fff;
 }
@@ -50,4 +50,26 @@
 .project-item{
     color:#fde9ff;
     font-family: "Exo 2", sans-serif;
+    margin-bottom: -10px;
+}
+
+.project-container-items{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    flex-wrap: wrap;
+}
+
+.project-image {
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 10px;
+    object-fit: cover; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform .2s; /* Animation */
+  }
+
+.project-image:hover{
+    transform: scale(1.5);
 }
