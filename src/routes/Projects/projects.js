@@ -2,6 +2,7 @@ import sgImg from './images/SGfr.png'
 import lynImg from './images/lynCo.png'
 import hackImg from './images/hackCo.png'
 import quizImg from './images/edCo.png'
+import learnImg from './images/wLearn.png'
 
 const projects =[
     {
@@ -14,7 +15,7 @@ const projects =[
       {
         "id": 2,
         "title": "Life Coach",
-        "link": "https://github.com/Edlenh/LynDznProgressCoach",
+        "link": "edlenh.github.io/LynDznProgressCoach/",
         "img": lynImg,
         "alt": "picture of life coaching app"
         
@@ -32,6 +33,13 @@ const projects =[
         "link": "https://github.com/Edlenh/EdsImpossibleQuiz",
         "img": quizImg,
         "alt": "picture of quiz app"
+      },
+      {
+        "id": 5,
+        "title": "We Learn",
+        "link": "https://github.com/Edlenh/WeLearnApp",
+        "img": learnImg,
+        "alt": "picture of social media app"
       },
 ]
 
