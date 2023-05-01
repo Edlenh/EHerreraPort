@@ -15,7 +15,7 @@ const projects =[
       {
         "id": 2,
         "title": "Life Coach",
-        "link": "edlenh.github.io/LynDznProgressCoach/",
+        "link": "https://edlenh.github.io/LynDznProgressCoach/",
         "img": lynImg,
         "alt": "picture of life coaching app"
         
