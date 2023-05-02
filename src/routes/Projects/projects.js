@@ -3,6 +3,7 @@ import lynImg from './images/lynCo.png'
 import hackImg from './images/hackCo.png'
 import quizImg from './images/edCo.png'
 import learnImg from './images/wLearn.png'
+import toImg from './images/todo2.png'
 
 const projects =[
     {
@@ -40,6 +41,13 @@ const projects =[
         "link": "https://github.com/Edlenh/WeLearnApp",
         "img": learnImg,
         "alt": "picture of social media app"
+      },
+      {
+        "id": 6,
+        "title": "To-do",
+        "link": "https://besttodoappever-client-10b65.kinsta.app/",
+        "img": toImg,
+        "alt": "picture of to do app"
       },
 ]
 
