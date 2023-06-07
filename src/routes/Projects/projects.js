@@ -42,13 +42,6 @@ const projects =[
         "img": learnImg,
         "alt": "picture of social media app"
       },
-      {
-        "id": 6,
-        "title": "To-do",
-        "link": "https://besttodoappever-client-10b65.kinsta.app/",
-        "img": toImg,
-        "alt": "picture of to do app"
-      },
 ]
 
 export default projects
