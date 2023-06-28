@@ -2,8 +2,7 @@ import sgImg from './images/SGfr.png'
 import lynImg from './images/lynCo.png'
 import hackImg from './images/hackCo.png'
 import quizImg from './images/edCo.png'
-import learnImg from './images/wLearn.png'
-import toImg from './images/todo2.png'
+import behaviorImg from "./images/bbSc.png"
 
 const projects =[
     {
@@ -37,9 +36,9 @@ const projects =[
       },
       {
         "id": 5,
-        "title": "We Learn",
-        "link": "https://github.com/Edlenh/WeLearnApp",
-        "img": learnImg,
+        "title": "Behavior Bridge",
+        "link": "https://behavior-bridge.vercel.app",
+        "img": behaviorImg,
         "alt": "picture of social media app"
       },
 ]
